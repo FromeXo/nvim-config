@@ -1,1 +1,6 @@
-
+require("plugins.treesitter")
+require("plugins.mason")
+require("plugins.lspconfig")
+require("plugins.cmp")
+require("plugins.lazydev")
+require("plugins.neotree")
