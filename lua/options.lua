@@ -2,6 +2,9 @@
              Misc
 --#########################]]
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- Clipboard integration
 vim.g.clipboard = "wl-copy"
 
