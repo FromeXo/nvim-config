@@ -21,7 +21,11 @@ inoremap <C-e> <End>
 noremap <C-d> <Del>
 inoremap <C-d> <Del>
 
+" redo the undo.
 noremap U <C-R>
+
+" Remove search result highlight on <Esc>
+noremap <silent> <Esc> :nohlsearch<CR>
 
 "############################
 "           Tabs
@@ -46,6 +50,17 @@ nnoremap <leader>6 6gt
 nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
+" Reorder tabs
+nnoremap <leader>tm1 :tabmove 0<CR>
+nnoremap <leader>tm2 :tabmove 1<CR>
+nnoremap <leader>tm3 :tabmove 2<CR>
+nnoremap <leader>tm3 :tabmove 3<CR>
+nnoremap <leader>tm3 :tabmove 4<CR>
+nnoremap <leader>tm3 :tabmove 5<CR>
+nnoremap <leader>tm3 :tabmove 6<CR>
+nnoremap <leader>tm3 :tabmove 7<CR>
+nnoremap <leader>tm3 :tabmove 8<CR>
+nnoremap <leader>tm3 :tabmove 9<CR>
 
 "############################
 "           Window
@@ -83,7 +98,17 @@ nnoremap <leader>w<End> :vertical resize -4<CR>
 nnoremap <leader>w= <C-W>=
 
 "############################
+"           Terminal
+"############################
+nnoremap <leader>§§ :terminal<CR>
+" Exit terminal-mode
+:tnoremap <Esc> <C-\><C-n>
+
+"############################
 "           Neo-Tree
 "############################
+" Open/close NeoTree in left vsplit
 nnoremap <leader>ee :Neotree toggle<CR>
+" View buffers
+nnoremap <leader>eb :Neotree show buffers<CR>
 
